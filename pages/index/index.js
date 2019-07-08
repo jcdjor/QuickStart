@@ -7,7 +7,8 @@ Page({
     motto: '第一个小程序',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+		time: (new Date())
   },
   //事件处理函数
   bindViewTap: function() {
@@ -51,11 +52,14 @@ Page({
       hasUserInfo: true
     })
   },
-	clickView: function(){
+/* 	clickView: function(){			//切换文字信息
 		if(this.data.motto == "第一个小程序"){
 			this.setData({ motto: "hello world"});
 		}else{
 			this.setData({ motto: "第一个小程序"});
 		}
+	}, */
+	viewTime: function(){				//打开微信扫一扫
+		this.setData( {time:new Date()} );
 	}
 })

@@ -8,8 +8,7 @@
     </block>
   </view>
   <view class="usermotto">
-    <text class="usermotto">{{motto}}</text>
-		<button bindtap="clickView">点击改变上面的文字</button>
-		<map name=""></map>
+    <text class="usermotto">打开小程序的时间:{{time}}</text>
+		<button bindtap="viewTime">点击显示当前时间</button>
   </view>
 </view>
